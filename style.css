@@ -1,0 +1,52 @@
+#passwordWindow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 30%;
+  }
+
+  .show{
+    visibility: visible;
+  }
+  .hide{
+    visibility: hidden;
+  }
+  
+  #passwordModal {
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+  }
+  
+  .passwordBackGround{
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); 
+  }
+
+  #pwd{
+    width: 500px;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 15px;
+    border: 0px;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  #wrapper {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+    z-index: 5000;
+    position: relative;
+  }
+

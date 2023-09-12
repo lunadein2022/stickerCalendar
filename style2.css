@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "SBAggroB";
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;  
+}
+
+#background{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar{
+    width: 1200px;
+    height: 800px;
+    border-radius: 15px;
+    background-color: #ece9e1;
+    box-shadow: 0px 20px 15px 8px #9e9e9e55;
+}
+
+#header{
+    width: 100%;
+    height: 150px;
+    background-color: #2f5a2d;
+    border-radius: 15px 15px 0 0;
+}
+
+#content{
+    width: 100%;
+    height: 600px;
+    background-color: #ece7d2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: #2f5a2d;
+    border-radius: 0 0 15px 15px;
+}
+
+#day_title{
+    position: relative;
+    left: 250px;
+    top: 26px;
+    color: #ece9e1;
+}
+
+#days{
+    position: relative;
+    width: 700px;
+    height: 100%;
+    cursor: pointer;
+}
+
+#title{
+    position: relative;
+    color: #ece9e1;
+    font-size: 50px;
+    top: 26px;
+}
+
+button{
+    width: 50px;
+    height: 100px;
+}
+
+#rightSide{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#leftSide{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#weather, #memo{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow : 0px 4px 5px 2px #c7c7c755;
+
+}
+
+#stickerTitle{
+    font-size: 30px;
+    color: #2f5a2d;
+    font-weight: 600;
+    width: 220px;
+    height: 95px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow : 0px 4px 5px 2px #c7c7c755;
+}
+
+.getSticker{
+    top: 13px;
+    position: relative;
+}
+
+#today-weather{
+    font-size: 25px;
+    font-weight: 600;
+    top: 20px;
+    position: relative;
+}
+
+#box{
+    width: 171px;
+    height: 92px;
+    margin-top: 22px;
+    background-color: #ece7d2;
+    border: 0;
+    border-radius: 15px;
+    resize: none;
+    padding: 10px;
+  }
+
+
+#inputMemo{
+    width: 171px;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ece7d2;
+    border: 0;
+    box-shadow : 0px 4px 5px 2px #86868655;
+    text-align: center;
+    font-size: 16px;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  #copyright{
+    left: 482px;
+    top: 13px;
+    position: relative;
+    color: #ece7d2;
+    font-weight: 200;
+  }
+
+  #what{
+    position: fixed;
+  }
